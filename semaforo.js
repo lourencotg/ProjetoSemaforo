@@ -23,12 +23,13 @@ let cliqueAutomatico = () => {
     let i = 0;
 
     loop = setInterval(() => {
-        imagem.src = cores[i]; // Atualiza a imagem com a cor correspondente ao índice atual
-        i++; // Incrementa `i`
-        if (i >= cores.length) { // Verifica se `i` atingiu o comprimento da array
-            i = 0; // Reseta `i` para 0
+        imagem.src = cores[i];
+        i++;
+        if (i >= cores.length) {
+            i = 0;
         }
-    }, 1000); // Executa a cada 1000 milissegundos (1 segundo)
+    }, 1000);
+
 }
 
 let parar = () => {
